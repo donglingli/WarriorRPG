@@ -1,0 +1,37 @@
+# ---- Unreal Engine ----
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+.vscode/
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# ---- IDE 目录（Rider / VS Code 本地配置，不入库）----
+.idea/
+*.DotSettings.user
+Plugins/Developer/RiderLink/
+
+# ---- IDE / 工程文件（由 Generate 重新生成，不入库）----
+*.sln
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.xcodeproj
+*.xcworkspace
+
+# ---- 系统文件 ----
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---- 注意 ----
+# Content/ 下的 .uasset / .umap 必须入库（那是工作成果）。
+# 但它们是二进制，git 只能整体回滚、不能看差异，这是 UE + git 的固有限制。

@@ -1,0 +1,8 @@
+Day1 2026.11.12 
+创建项目，增加测试场景，创建基础类，调试工具类；设置玩家相机，添加原生输入标签；
+
+Day2 2026.11.13
+自定义增强输入组件，绑定玩家输入
+卡点1：创建UWarriorInputComponent::BindNativeInputAction参数填错
+卡点2：绑定Look后，运行无反应，查看IMC_Default，将GamePad XY修改为Mouse XY就好了
+耗时点1：代码编写还是不熟，慢！频繁看怎么写的！
